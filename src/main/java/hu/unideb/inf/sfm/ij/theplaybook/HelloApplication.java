@@ -20,7 +20,8 @@ public class HelloApplication extends Application {
     public static void main(String[] args) {
         launch();
         //commit
-        System.out.println("Hello");
-        
+        System.out.println("Hello2");
+        System.out.println("Hello2");
+
     }
 }
