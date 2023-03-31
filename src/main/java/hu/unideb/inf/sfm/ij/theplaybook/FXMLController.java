@@ -3,7 +3,7 @@ package hu.unideb.inf.sfm.ij.theplaybook;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class FXMLController {
     @FXML
     private Label welcomeText;
 
