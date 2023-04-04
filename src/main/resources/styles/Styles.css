@@ -2,7 +2,7 @@
     -fx-font-weight: bold;
 }
 
-#login_sceen {
+#login_screen {
     /*-fx-background-color: #2a2e37;*/
     -fx-background-image: url("images/cover.jpg");
     -fx-background-position: center center;
