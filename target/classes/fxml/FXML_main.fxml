@@ -77,22 +77,22 @@
           <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="delete" mnemonicParsing="false" text="Törlés" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#deleteHandler" text="Törlés" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Serif Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="add" mnemonicParsing="false" text="Hozzáadás" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button fx:id="add" mnemonicParsing="false" onAction="#addHandler" text="Hozzáadás" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Serif Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="back" mnemonicParsing="false" text="Vissza" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button fx:id="back" mnemonicParsing="false" onAction="#backHandler" text="Vissza" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Serif Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="exit" mnemonicParsing="false" text="Kilépés" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exitHandler" text="Kilépés" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Serif Italic" size="16.0" />
                </font>
