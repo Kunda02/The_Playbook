@@ -92,7 +92,7 @@
                   <Font name="Serif Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="exit" mnemonicParsing="false" text="Kilépés" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#exitHandler" text="Kilépés" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Serif Italic" size="16.0" />
                </font>
