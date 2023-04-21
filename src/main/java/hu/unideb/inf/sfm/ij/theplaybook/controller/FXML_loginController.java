@@ -43,7 +43,7 @@ public class FXML_loginController {
         stage.setTitle("Oldal");
         stage.setScene(mainScene);
         stage.show();
-
+        //commit
         Stage original = (Stage)loginName.getScene().getWindow();
         original.close();
 
