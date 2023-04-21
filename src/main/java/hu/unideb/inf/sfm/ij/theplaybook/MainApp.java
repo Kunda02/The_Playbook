@@ -6,6 +6,7 @@ package hu.unideb.inf.sfm.ij.theplaybook;
         import javafx.stage.Stage;
 
         import java.io.IOException;
+        //import java.sql.SQLException;
 
 public class MainApp extends Application {
     @Override
@@ -19,10 +20,15 @@ public class MainApp extends Application {
     }
 
     public static void main(String[] args) {
+        //startDatabase();
         launch(args);
         //commit
         System.out.println("Működik a commit");
         System.out.println("Ha nem megy szóljatok");
 
     }
+    /*
+    private static void startDatabase() throws SQLException {
+        new Server().runTool("-webPort", "55555", "-tcp", "-web", "-ifNotExists");
+    }*/
 }

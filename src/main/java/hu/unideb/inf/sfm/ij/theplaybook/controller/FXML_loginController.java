@@ -31,22 +31,39 @@ public class FXML_loginController {
     void loginHandler(ActionEvent event) throws IOException {
         loginBtn.setDisable(true);
         loginStatus.setText("Bejelentkezés...");
+        String nev = "Feri";
+        String jelszo = "jelszo";
+        if ((nev.equals(loginName.getText())) && (jelszo.equals(loginPassword.getText()))) {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_main.fxml"));
+            Parent mainParent = loader.load();
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_main.fxml"));
-        Parent mainParent = loader.load();
+            FXML_mainController mainController = loader.getController();
+            //mainController.setDao(pDAO);
 
-        FXML_mainController mainController = loader.getController();
-        //mainController.setDao(pDAO);
+            Scene mainScene = new Scene(mainParent);
+            Stage stage = new Stage();
+            stage.setTitle("Oldal");
+            stage.setScene(mainScene);
+            stage.show();
+            //commit
+            Stage original = (Stage) loginName.getScene().getWindow();
+            original.close();
+        }
+        else {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_login.fxml"));
+            Parent loginParent = loader.load();
 
-        Scene mainScene = new Scene(mainParent);
-        Stage stage = new Stage();
-        stage.setTitle("Oldal");
-        stage.setScene(mainScene);
-        stage.show();
-        //commit
-        Stage original = (Stage)loginName.getScene().getWindow();
-        original.close();
+            //FXML_loginController loginController = loader.getController();
 
-
+            Scene loginScene = new Scene(loginParent);
+            Stage stage = new Stage();
+            stage.setTitle("Login");
+            stage.setScene(loginScene);
+            stage.show();
+            //loginStatus.setText("Hibás jelszó vagy felhasználói név! Próbálja újra!");
+            //commit
+            Stage original = (Stage)loginBtn.getScene().getWindow();
+            original.close();
+        }
     }
 }

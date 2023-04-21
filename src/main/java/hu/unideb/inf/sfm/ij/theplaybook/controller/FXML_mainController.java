@@ -26,8 +26,7 @@ public class FXML_mainController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_login.fxml"));
         Parent loginParent = loader.load();
 
-        FXML_loginController loginController = loader.getController();
-        //mainController.setDao(pDAO);
+        //FXML_loginController loginController = loader.getController();
 
         Scene loginScene = new Scene(loginParent);
         Stage stage = new Stage();
@@ -35,8 +34,8 @@ public class FXML_mainController {
         stage.setScene(loginScene);
         stage.show();
         //commit
-        //Stage original = (Stage).getScene().getWindow();
-        //original.close();
+        Stage original = (Stage)exit.getScene().getWindow();
+        original.close();
 
     }
 
