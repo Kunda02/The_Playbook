@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class FXML_mainController implements Initializable {
+public class FXML_mainController {
     @FXML
     public Button exit;
     @FXML
@@ -40,37 +40,26 @@ public class FXML_mainController implements Initializable {
 
     private Page page;
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    public void setPage(Page page) {
+        this.page = page;
 
-        dao = new JpaPageDAO();
-        /*
-        page = new Page();
-        page.setAuthor("Barney");
-        page.setEffectiveness(69);
-        page.setTactic("Ask her out.");
-        page.setTitle("Virgin");
-
-        dao.savePage(page);*/
-
-        var page1 = dao.getPage(1);
-        title.setText(page1.getTitle());
-        tactic.setText(page1.getTactic());
-        author.setText(page1.getAuthor());
-        effectiveness.setText("" + page1.getEffectiveness());
+        title.setText(page.getTitle());
+        tactic.setText(page.getTactic());
+        author.setText(page.getAuthor());
+        effectiveness.setText("" + page.getEffectiveness());
     }
 
     public void exitHandler(ActionEvent actionEvent) throws IOException {
         exit.setDisable(true);
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_login.fxml"));
-        Parent loginParent = loader.load();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_tacticlist.fxml"));
+        Parent tacticlistParent = loader.load();
 
         //FXML_loginController loginController = loader.getController();
 
-        Scene loginScene = new Scene(loginParent);
+        Scene loginScene = new Scene(tacticlistParent);
         Stage stage = new Stage();
-        stage.setTitle("Login");
+        stage.setTitle("Tactics");
         stage.setScene(loginScene);
         stage.show();
         //commit
