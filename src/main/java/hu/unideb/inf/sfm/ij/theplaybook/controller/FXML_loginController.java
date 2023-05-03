@@ -56,7 +56,22 @@ public class FXML_loginController {
             return;
         }
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_main.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_tacticlist.fxml"));
+        Parent mainParent = loader.load();
+
+        FXML_tacticlistController mainController = loader.getController();
+        //mainController.setDao(pDAO);
+
+        Scene mainScene = new Scene(mainParent);
+        Stage stage = new Stage();
+        stage.setTitle("Oldal");
+        stage.setScene(mainScene);
+        stage.show();
+        //commit
+        Stage original = (Stage) loginName.getScene().getWindow();
+        original.close();
+
+        /*FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_main.fxml"));
         Parent mainParent = loader.load();
 
         FXML_mainController mainController = loader.getController();
@@ -69,7 +84,7 @@ public class FXML_loginController {
         stage.show();
         //commit
         Stage original = (Stage) loginName.getScene().getWindow();
-        original.close();
+        original.close();*/
 
         /*
         if ((nev.equals(loginName.getText())) && (jelszo.equals(loginPassword.getText()))) {
