@@ -5,4 +5,6 @@ module hu.unideb.inf.sfm.ij.theplaybook {
                             
     opens hu.unideb.inf.sfm.ij.theplaybook to javafx.fxml;
     exports hu.unideb.inf.sfm.ij.theplaybook;
+    exports hu.unideb.inf.sfm.ij.theplaybook.controller;
+    opens hu.unideb.inf.sfm.ij.theplaybook.controller to javafx.fxml;
 }

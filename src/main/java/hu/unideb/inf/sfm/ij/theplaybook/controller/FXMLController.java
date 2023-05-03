@@ -1,4 +1,4 @@
-package hu.unideb.inf.sfm.ij.theplaybook;
+package hu.unideb.inf.sfm.ij.theplaybook.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
