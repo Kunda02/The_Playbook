@@ -1,5 +1,12 @@
 hu/unideb/inf/sfm/ij/theplaybook/controller/FXMLController.class
+hu/unideb/inf/sfm/ij/theplaybook/model/UserDAO.class
+hu/unideb/inf/sfm/ij/theplaybook/model/PageDAO.class
+hu/unideb/inf/sfm/ij/theplaybook/model/JpaPageDAO.class
 hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_loginController.class
 hu/unideb/inf/sfm/ij/theplaybook/MainApp.class
 hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_mainController.class
-module-info.class
+hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_registerController.class
+hu/unideb/inf/sfm/ij/theplaybook/model/JpaUserDAO.class
+hu/unideb/inf/sfm/ij/theplaybook/model/User.class
+hu/unideb/inf/sfm/ij/theplaybook/model/Page.class
+hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_tacticlistController.class
