@@ -33,15 +33,15 @@ public class FXML_loginController {
 
     @FXML
     void loginHandler(ActionEvent event) throws IOException {
-        var user = new User();
+        /*var user = new User();
         user.setUsername("test");
-        user.setPassword("elek");
+        user.setPassword("elek");*/
 
         try{
             loginBtn.setDisable(true);
             
             UserDAO uDAO = new JpaUserDAO();
-            uDAO.saveUser(user);
+            //uDAO.saveUser(user);
             
             loginStatus.setText("Bejelentkezés...");
 
