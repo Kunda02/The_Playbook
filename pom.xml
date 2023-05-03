@@ -36,7 +36,21 @@
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
-    </dependency>              </dependencies>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.6.15.Final</version>
+    </dependency>
+
+
+    <!-- Database -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.199</version>
+    </dependency>
+  </dependencies>
 
   <build>
         <plugins>
@@ -58,7 +72,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>hu.unideb.inf.sfm.ij.theplaybook/hu.unideb.inf.sfm.ij.theplaybook.MainApp</mainClass>
+              <mainClass>hu.unideb.inf.sfm.ij.theplaybook.MainApp</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>
