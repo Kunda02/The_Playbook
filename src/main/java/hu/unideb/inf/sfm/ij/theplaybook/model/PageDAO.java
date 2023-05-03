@@ -11,4 +11,6 @@ public interface PageDAO {
     void updatePage(Page page);
 
     Page getPage(int id);
+
+    void removePage(Page page);
 }

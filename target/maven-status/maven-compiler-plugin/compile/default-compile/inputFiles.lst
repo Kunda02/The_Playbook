@@ -1,0 +1,12 @@
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_registerController.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/model/User.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/model/JpaPageDAO.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/model/Page.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_tacticlistController.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/model/PageDAO.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/model/UserDAO.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/model/JpaUserDAO.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_mainController.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/MainApp.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_loginController.java
+/home/olik/IdeaProjects/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXMLController.java

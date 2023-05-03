@@ -19,7 +19,7 @@ public class JpaPageDAO implements PageDAO {
     @Override
     public List<Page> getPages() {
         TypedQuery<Page> query = entityManager.createQuery(
-                "SELECT p FROM Pages p", Page.class);
+                "SELECT p FROM PAGES p", Page.class);
         List<Page> pages = query.getResultList();
         return pages;
     }
@@ -47,5 +47,12 @@ public class JpaPageDAO implements PageDAO {
         p = query.getSingleResult();
 
         return p;
+    }
+
+    @Override
+    public void removePage(Page page) {
+        entityManager.getTransaction().begin();
+        entityManager.remove(page);
+        entityManager.getTransaction().commit();
     }
 }
