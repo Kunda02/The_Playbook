@@ -1,0 +1,10 @@
+#pages_list {
+    /*-fx-background-color: #2a2e37;*/
+    -fx-background-image: url("images/list.jpg");
+    -fx-background-position: center center;
+
+}
+.table-row-cell {
+    -fx-background-color: #2a2e37;
+    -fx-background-image: url("images/list.jpg");
+    -fx-background-position: center center;
