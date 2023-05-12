@@ -1,0 +1,36 @@
+.button {
+    -fx-font-weight: bold;
+}
+/*TO DO*/
+#reg_screen {
+    /*-fx-background-color: #2a2e37;*/
+    -fx-background-image: url("images/pages.jpg");
+    -fx-background-position: center center;
+
+}
+#reg_button {
+    -fx-font-size: 1.5em;
+    -fx-border-width: 3px;
+    -fx-background-radius: 1200px;
+    -fx-background-color: #ffd700;
+    -fx-font-weight: bold;
+    -fx-font-family: Serif;
+    -fx-font-color: #000000;
+    -fx-padding:10px;
+    -fx-cursor:hand;
+}
+.login_data {
+    -fx-text-fill: #ff0019;
+    -fx-font-size: 2em;
+
+.label {
+    /* felhasználóinév + jelszó text szín */
+    -fx-font-family: Serif;
+    -fx-text-fill: #ffd700;
+    -fx-font-weight: bold;
+    -fx-text-background-color: blue;
+
+.panel{
+    -fx-background-color: #000000;
+    -fx-background-radius: 30;
+}
