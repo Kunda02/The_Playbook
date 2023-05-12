@@ -17,7 +17,7 @@
     -fx-text-fill: #ffd700;
 }
 
-#login_button {
+#add_button {
     -fx-font-size: 1.5em;
     -fx-border-width: 3px;
     -fx-background-radius: 1200px;
@@ -29,7 +29,31 @@
     -fx-cursor:hand;
 }
 
-#reg_button {
+#exit_button {
+    -fx-font-size: 1.5em;
+    -fx-border-width: 3px;
+    -fx-background-radius: 1200px;
+    -fx-background-color: #ffd700;
+    -fx-font-weight: bold;
+    -fx-font-family: Serif;
+    -fx-font-color: #000000;
+    -fx-padding:10px;
+    -fx-cursor:hand;
+}
+
+#back_button {
+    -fx-font-size: 1.5em;
+    -fx-border-width: 3px;
+    -fx-background-radius: 1200px;
+    -fx-background-color: #ffd700;
+    -fx-font-weight: bold;
+    -fx-font-family: Serif;
+    -fx-font-color: #000000;
+    -fx-padding:10px;
+    -fx-cursor:hand;
+}
+
+#delete_button {
     -fx-font-size: 1.5em;
     -fx-border-width: 3px;
     -fx-background-radius: 1200px;
