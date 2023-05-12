@@ -23,6 +23,8 @@ public class FXML_loginController {
     @FXML
     public Button loginBtn;
     @FXML
+    public Button regBtn1;
+    @FXML
     public ColumnConstraints panel;
     @FXML
     public TextField loginName;
@@ -121,6 +123,19 @@ public class FXML_loginController {
         }*/
     }
 
-    public void regHandler(ActionEvent actionEvent) {
+    public void regHandler(ActionEvent actionEvent) throws IOException {
+        regBtn1.setDisable(true);
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_register.fxml"));
+        Parent tacticlistParent = loader.load();
+
+        Scene loginScene = new Scene(tacticlistParent);
+        Stage stage = new Stage();
+        stage.setTitle("Tactics");
+        stage.setScene(loginScene);
+        stage.show();
+        //commit
+        Stage original = (Stage)regBtn1.getScene().getWindow();
+        original.close();
     }
 }

@@ -1,3 +1,59 @@
 2023-05-09 14:05:40 jdbc[9]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PAGES PAGES USERS[*] USERS"; SQL statement:
 SELECT * FROM PAGES PAGES USERS USERS [42000-199]
+2023-05-10 12:31:49 database: wrong user or password; user: "USER"
+org.h2.message.DbException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:126)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:299)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:782)
+	at org.h2.server.web.WebApp.login(WebApp.java:1004)
+	at org.h2.server.web.WebApp.process(WebApp.java:219)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:169)
+	at org.h2.server.web.WebThread.process(WebThread.java:139)
+	at org.h2.server.web.WebThread.run(WebThread.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 20 more
+2023-05-12 23:00:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column """TACTIC"" VARCHAR(255)": "STRINGDECODE('\u00d6lt\u00f6zz \u00fagy, mint Ted. Mondd el l\u00e1nyoknak, hogy az olt\u00e1r el\u0151tt hagytak. Mi\u00e9rt m\... (265)"; SQL statement:
+UPDATE "PUBLIC"."PAGES" SET "ID"=? ,"AUTHOR"=? ,"EFFECTIVENESS"=? ,"TACTIC"=? ,"TITLE"=?  WHERE "ID"=? [22001-199]
+2023-05-12 23:00:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column """TACTIC"" VARCHAR(255)": "STRINGDECODE('\u00d6lt\u00f6zz \u00fagy, mint Ted. Mondd el l\u00e1nyoknak, hogy az olt\u00e1r el\u0151tt hagytak. Mi\u00e9rt m\... (265)"; SQL statement:
+UPDATE "PUBLIC"."PAGES" SET "ID"=? ,"AUTHOR"=? ,"EFFECTIVENESS"=? ,"TACTIC"=? ,"TITLE"=?  WHERE "ID"=? [22001-199]
+2023-05-12 23:00:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column """TACTIC"" VARCHAR(255)": "STRINGDECODE('\u00d6lt\u00f6zz \u00fagy, mint Ted. Mondd el l\u00e1nyoknak, hogy az olt\u00e1r el\u0151tt hagytak.Mi\u00e9rt m\u... (264)"; SQL statement:
+UPDATE "PUBLIC"."PAGES" SET "ID"=? ,"AUTHOR"=? ,"EFFECTIVENESS"=? ,"TACTIC"=? ,"TITLE"=?  WHERE "ID"=? [22001-199]
+2023-05-12 23:00:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column """TACTIC"" VARCHAR(255)": "STRINGDECODE('\u00d6lt\u00f6zz \u00fagy, mint Ted. Mondd el l\u00e1nyoknak, hogy az olt\u00e1r el\u0151tt hagytak.Mi\u00e9rt m\u... (264)"; SQL statement:
+UPDATE "PUBLIC"."PAGES" SET "ID"=? ,"AUTHOR"=? ,"EFFECTIVENESS"=? ,"TACTIC"=? ,"TITLE"=?  WHERE "ID"=? [22001-199]
+2023-05-12 23:04:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column """TACTIC"" VARCHAR(255)": "STRINGDECODE('Tegyen \u00fagy, mintha nagyon \u00f6sszet\u00f6rne a sz\u00edve az ex\u00e9vel val\u00f3 szak\u00edt\u00e1sa miat... (262)"; SQL statement:
+INSERT INTO "PUBLIC"."PAGES"("ID","AUTHOR","EFFECTIVENESS","TACTIC","TITLE")VALUES(?,?,?,?,?) [22001-199]
+2023-05-12 23:04:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column """TACTIC"" VARCHAR(255)": "STRINGDECODE('Tegyen \u00fagy, mintha nagyon \u00f6sszet\u00f6rne a sz\u00edve az ex\u00e9vel val\u00f3 szak\u00edt\u00e1sa miat... (262)"; SQL statement:
+INSERT INTO "PUBLIC"."PAGES"("ID","AUTHOR","EFFECTIVENESS","TACTIC","TITLE")VALUES(?,?,?,?,?) [22001-199]
+2023-05-12 23:05:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column """TACTIC"" VARCHAR(255)": "STRINGDECODE('Tegyen \u00fagy, mintha nagyon \u00f6sszet\u00f6rne a sz\u00edve az ex\u00e9vel val\u00f3 szak\u00edt\u00e1sa miat... (262)"; SQL statement:
+INSERT INTO "PUBLIC"."PAGES"("ID","AUTHOR","EFFECTIVENESS","TACTIC","TITLE")VALUES(?,?,?,?,?) [22001-199]
+2023-05-12 23:05:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column """TACTIC"" VARCHAR(255)": "STRINGDECODE('Tegyen \u00fagy, mintha nagyon \u00f6sszet\u00f6rne a sz\u00edve az ex\u00e9vel val\u00f3 szak\u00edt\u00e1sa miat... (262)"; SQL statement:
+INSERT INTO "PUBLIC"."PAGES"("ID","AUTHOR","EFFECTIVENESS","TACTIC","TITLE")VALUES(?,?,?,?,?) [22001-199]
+2023-05-12 23:09:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PAGES: ""ID"" INTEGER DEFAULT (NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_02DCE6B6_C40F_4D2C_A071_FB5AF00AAD44"") NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_02DCE6B6_C40F_4D2C_A071_FB5AF00AAD44"")"; SQL statement:
+INSERT INTO "PUBLIC"."PAGES"("ID","AUTHOR","EFFECTIVENESS","TACTIC","TITLE")VALUES(?,?,?,?,?) -- (?1, ?2, ?3, ?4, ?5) [22018-199]
+2023-05-12 23:09:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PAGES: ""ID"" INTEGER DEFAULT (NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_02DCE6B6_C40F_4D2C_A071_FB5AF00AAD44"") NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_02DCE6B6_C40F_4D2C_A071_FB5AF00AAD44"")"; SQL statement:
+INSERT INTO "PUBLIC"."PAGES"("ID","AUTHOR","EFFECTIVENESS","TACTIC","TITLE")VALUES(?,?,?,?,?) -- (?1, ?2, ?3, ?4, ?5) [22018-199]
