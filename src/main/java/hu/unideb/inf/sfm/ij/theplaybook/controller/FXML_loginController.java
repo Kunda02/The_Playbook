@@ -120,4 +120,7 @@ public class FXML_loginController {
             original.close();
         }*/
     }
+
+    public void regHandler(ActionEvent actionEvent) {
+    }
 }
