@@ -99,7 +99,20 @@ public class FXML_mainController {
 
     }
 
-    public void deleteHandler(ActionEvent actionEvent) {
+    public void deleteHandler(ActionEvent actionEvent) throws IOException {
+        exit.setDisable(true);
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_tacticlist.fxml"));
+        Parent tacticlistParent = loader.load();
+
+        Scene loginScene = new Scene(tacticlistParent);
+        Stage stage = new Stage();
+        stage.setTitle("Tactics");
+        stage.setScene(loginScene);
+        stage.show();
+        //commit
+        Stage original = (Stage)exit.getScene().getWindow();
+        original.close();
 
     }
 }

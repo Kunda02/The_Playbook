@@ -53,7 +53,7 @@
                         <Font name="Serif Bold" size="18.0" />
                      </font>
                   </Text>
-                  <Text layoutX="201.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
+                  <Text layoutX="213.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\%">
                      <font>
                         <Font name="Serif Regular" size="21.0" />
                      </font>
