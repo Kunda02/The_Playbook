@@ -102,22 +102,22 @@
           <RowConstraints maxHeight="24.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="delete" mnemonicParsing="false" onAction="#deleteHandler" text="Törlés" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button id="delete_button" fx:id="delete" mnemonicParsing="false" onAction="#deleteHandler" stylesheets="@../styles/main_Styles.css" text="Törlés" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Serif Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="add" mnemonicParsing="false" onAction="#addHandler" text="Hozzáadás" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button id="add_button" fx:id="add" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addHandler" stylesheets="@../styles/main_Styles.css" text="Hozzáadás" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Serif Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="back" mnemonicParsing="false" onAction="#backHandler" text="Vissza" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button id="back_button" fx:id="back" mnemonicParsing="false" onAction="#backHandler" stylesheets="@../styles/main_Styles.css" text="Vissza" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Serif Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="exit" mnemonicParsing="false" onAction="#exitHandler" text="Kilépés" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button id="exit_button" fx:id="exit" mnemonicParsing="false" onAction="#exitHandler" stylesheets="@../styles/main_Styles.css" text="Kilépés" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <font>
                   <Font name="Serif Italic" size="16.0" />
                </font>

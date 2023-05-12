@@ -100,5 +100,6 @@ public class FXML_mainController {
     }
 
     public void deleteHandler(ActionEvent actionEvent) {
+
     }
 }
