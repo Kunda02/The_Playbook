@@ -30,14 +30,7 @@ public class MainApp extends Application {
         new Server().runTool("-webPort", "55555", "-tcp", "-web", "-ifNotExists");
 
         launch(args);
-
-        //commit
-        System.out.println("Működik a commit");
-        System.out.println("Ha nem megy szóljatok");
+        
 
     }
-    /*
-    private static void startDatabase() throws SQLException {
-        new Server().runTool("-webPort", "55555", "-tcp", "-web", "-ifNotExists");
-    }*/
 }
