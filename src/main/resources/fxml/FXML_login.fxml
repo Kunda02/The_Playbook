@@ -24,11 +24,6 @@
     <RowConstraints maxHeight="190.0" minHeight="76.0" prefHeight="141.0" vgrow="SOMETIMES" />
 </rowConstraints>
 <children>
-    <Button id="login_button" fx:id="loginBtn" alignment="CENTER" mnemonicParsing="false" onAction="#loginHandler" prefHeight="53.0" prefWidth="172.0" text="Belépés" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-        <GridPane.margin>
-            <Insets bottom="15.0" top="10.0" />
-        </GridPane.margin>
-    </Button>
     <GridPane GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="321.0" minWidth="10.0" prefWidth="263.0" />
@@ -89,5 +84,32 @@
             <Insets top="15.0" />
         </padding>
     </TextField>
+      <GridPane GridPane.rowIndex="4">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="521.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="521.0" minWidth="0.0" prefWidth="200.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="521.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="521.0" minWidth="10.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.0" minWidth="10.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+          <Button id="login_button" fx:id="loginBtn" alignment="CENTER" mnemonicParsing="false" onAction="#loginHandler" prefHeight="50.0" prefWidth="172.0" text="Belépés" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+              <GridPane.margin>
+                  <Insets bottom="15.0" top="10.0" />
+              </GridPane.margin>
+          </Button>
+            <Button id="login_button" fx:id="regBtn1" alignment="CENTER" mnemonicParsing="false" onAction="#regHandler" prefHeight="50.0" prefWidth="172.0" text="Regisztráció" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="5.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
 </children>
 </GridPane>

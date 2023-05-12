@@ -2,7 +2,7 @@
 /home/robert/Dokumentumok/GitHub/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_tacticlistController.java
 /home/robert/Dokumentumok/GitHub/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/model/JpaPageDAO.java
 /home/robert/Dokumentumok/GitHub/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/model/JpaUserDAO.java
-/home/robert/Dokumentumok/GitHub/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXMLController.java
+/home/robert/Dokumentumok/GitHub/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_pageaddController.java
 /home/robert/Dokumentumok/GitHub/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/model/Page.java
 /home/robert/Dokumentumok/GitHub/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_loginController.java
 /home/robert/Dokumentumok/GitHub/The_Playbook/src/main/java/hu/unideb/inf/sfm/ij/theplaybook/controller/FXML_registerController.java

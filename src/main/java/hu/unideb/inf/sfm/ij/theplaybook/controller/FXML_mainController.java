@@ -52,10 +52,24 @@ public class FXML_mainController {
     public void exitHandler(ActionEvent actionEvent) throws IOException {
         exit.setDisable(true);
 
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_login.fxml"));
+        Parent loginParent = loader.load();
+        Scene loginScene = new Scene(loginParent);
+        Stage stage = new Stage();
+        stage.setTitle("Login");
+        stage.setScene(loginScene);
+        stage.show();
+        //commit
+        Stage original = (Stage)exit.getScene().getWindow();
+        original.close();
+
+    }
+
+    public void backHandler(ActionEvent actionEvent) throws IOException {
+        exit.setDisable(true);
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_tacticlist.fxml"));
         Parent tacticlistParent = loader.load();
-
-        //FXML_loginController loginController = loader.getController();
 
         Scene loginScene = new Scene(tacticlistParent);
         Stage stage = new Stage();
@@ -65,16 +79,24 @@ public class FXML_mainController {
         //commit
         Stage original = (Stage)exit.getScene().getWindow();
         original.close();
-
     }
 
-    public void backHandler(ActionEvent actionEvent) {
-        //
-        ////
-        ////
-    }
+    public void addHandler(ActionEvent actionEvent) throws IOException {
+        exit.setDisable(true);
 
-    public void addHandler(ActionEvent actionEvent) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/FXML_pageadd.fxml"));
+        Parent pageaddParent = loader.load();
+
+
+        Scene loginScene = new Scene(pageaddParent);
+        Stage stage = new Stage();
+        stage.setTitle("PageAdd");
+        stage.setScene(loginScene);
+        stage.show();
+        //commit
+        Stage original = (Stage)exit.getScene().getWindow();
+        original.close();
+
     }
 
     public void deleteHandler(ActionEvent actionEvent) {
