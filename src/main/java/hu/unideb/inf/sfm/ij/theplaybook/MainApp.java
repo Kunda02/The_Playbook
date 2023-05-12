@@ -24,6 +24,7 @@ public class MainApp extends Application {
         stage.setResizable(false);
         stage.show();
     }
+    //Commit with comment #1
 
     public static void main(String[] args) throws SQLException {
         //startDatabase();
