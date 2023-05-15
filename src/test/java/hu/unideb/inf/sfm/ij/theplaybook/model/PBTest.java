@@ -26,7 +26,7 @@ public class PBTest {
     @Test
     void getPassword_code2() {
         User user = new User();
-        user.setPassword("#&@");
-        assertEquals("#&@",user.getPassword());
+        user.setPassword("#&@1");
+        assertEquals("#&@1",user.getPassword());
     }
 }
